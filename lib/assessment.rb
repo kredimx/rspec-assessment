@@ -4,32 +4,20 @@
 # Para corroborar que tu código funciona, debes correr rspec
 class Assessment
   class << self
-    # Ejercicio 1:
-    # Escribe un método que compare si dos cadenas de texto son iguales
-    # independientemente si son mayúsculas o minúsculas.
-    def compare(str1, str2)
-      raise StandardError # Remueve esta línea para comenzar
+    # Ejercicio 1: Revertir arreglo sin usar `reverse` method ni ningún otro método
+    def reverse_array(array)
+      # Remove this line to continue
     end
 
-    # Ejercicio 2:
-    # Escribe un método anagram? que compare si dos cadenas son anagramas
-    # Nota: asume que los parámetros que recibes son solo letras del alfabeto sin espacios
-
-
-    # Ejercicio 3:
-    # Escribe un método hash_keys que ordene las llaves (keys) de un hash por la lóngitud de la llave.
-
-
-    # Ejercicio 4
-    # Escribe un método product que retorne el producto de todos los elementos de un arreglo o rango
-    # que recibe en un argumento array/range
-
-
-    # Ejercicio 5
-    # Escribe un método domino_tiles que te devuelva las fichas de un juego de dominó (28 fichas)
-    # Formato esperado [ [0,0], [0,1], [0,2], [0,3], [0,4], [0,5], [0,6], [1,1], [1,2], ... ]
-    # donde cada [num1, num2] representa una ficha.
-    # Recuerda! hay muchas maneras de llegar al resultado, no importa el orden de las fichas en tanto esté correcto.
-
+    # Ejercicio 2: Remover paréntesis inválidos de una cadena
+    # Params:
+    #  - str: cadena que puede contener paréntesis izquierdo '(' y paréntesis derecho ')'
+    # Debido a que los paréntesis pueden combinarse de muchas maneras, la cadena puede tener izquierda '(' y no derecha ')' o viceversa
+    #  - "()", "(())", "()()", "(())()" son cadenas con paréntesis válidos,
+    #  - y ")(", "(()", "()()( ", "()())" son cadenas con paréntesis inválidos.
+    # Solo deberá remover paréntesis inválidos, es decir, aquellos que están demás en la cadena
+    def remove_parentheses(str)
+      # Remove this line to continue
+    end
   end
 end
