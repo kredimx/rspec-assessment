@@ -10,7 +10,7 @@ El archivo donde debes escribir tu código está en la ruta `lib/assessment.rb`
 
 > Recuerda que antes deberás instalar las dependencias del proyecto con `bundle install`
 
-#### 1. Escribe una función que revierta un arreglo sin usar ningún método que lo haga
+#### 1. Escribe una función que revierta un arreglo sin usar ningún método de reordenamiento
 
 ```ruby
 >> Assessment.reverse_array([1, 2, 3])
@@ -19,11 +19,32 @@ El archivo donde debes escribir tu código está en la ruta `lib/assessment.rb`
 => [2, 3, 4, 1]
 ```
 
-#### 2. Escribe una función que remueva paréntesis inválidos en una cadena
+#### 2. Escribe una función que cuente la cantidad de divisores que son divisibles por 2 de un número
 
 ```ruby
->> Assessment.remove_parentheses('2/((4-1)')
-=> '2/(4-1)'
->> Assessment.remove_parentheses('9-(3+2))')
-=> '9-(3+2)'
+>> Assessment.count_divisors(9)
+=> 0
+>> Assessment.count_divisors(12)
+=> 4
+>> Assessment.count_divisors(36)
+=> 6
+>> Assessment.count_divisors(21)
+=> 0
+>> Assessment.count_divisors(2)
+=> 1
+```
+
+#### 3. Escribe una función que haga match de paréntesis en una cadena
+
+```ruby
+>> Assessment.match_parentheses('()')
+=> true
+>> Assessment.match_parentheses('(())')
+=> true
+>> Assessment.match_parentheses(')(')
+=> false
+>> Assessment.match_parentheses('(]')
+=> false
+>> Assessment.match_parentheses('())')
+=> false
 ```
